@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Attendance SM</title>
+      <meta name="author" content="">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="manifest" href="/manifest.json">
+   </head>
+   <body>
+
+   
+ 
+ 
+<div class="topbar" style="display: inline-block; text-align: center; width: 100%;">
+
+<img src="css/logo.png" width="100px" height="100px" style="float:left;">
+		 <select id="docente" name="row" class="selectpicker" data-style="btn-success" autofocus="">
+               <option value="" disabled="" selected="">Selecciona tu grupo</option>
+               <option value="aux">Asistente</option>
+         </select>
+		 
+		 <button id="share" class="btn btn-secondary">¿Instalar en otro dispositivo?</button>
+		 
+		   <div class="navbar" id="gpos"></div> 
+</div>
+			
+  		  <span class="topbar-right" style="position:absolute;top:0;right:0;width:25%; color: white;">
+<form id="form" action="https://script.google.com/macros/s/AKfycbzk1AhV8XyG3mvnZJAN4XCpQZiMVEDe8jv-H0Hr81iBJzdm73Zm/exec">
+            <input class="input" id="asistencias" type="text" name="asistencias">
+            <input class="input" id="ausencias" type="text" name="ausencias">
+            Total de asistencias: 
+            <input class="ind" id="asistenciasTotal" type="number" name="asistenciasTotal" readonly="readonly">
+            Ausentismo: 
+            <input class="ind" id="ausenciasTotal" type="number" name="ausenciasTotal" readonly="readonly">
+			<input id="rol" type="text" name="rol" hidden>
+			<button id="sub" type="submit" class="btn btn-success btn-lg">Enviar pase de lista</button>
+</form>
+
+ 
+</span>   
+
+      <h1>Recuerda enviar tu pase de lista antes de las 9:00</h1>
+      <div id="view"></div>
+	  
+     <div id="qcode" style="display:none; text-align: center;">
+	 Puedes compartir esta aplicación escaneando este código QR
+            <img src="PM.png">
+      </div>  
+	  
+            
+      <div id="wrapper" class="container"><span class="all"><input id="all" type="checkbox">ALL</span></div>
+	  
+         <div class="footer">
+            <p>Desarrollado por Agustín Jurado</p>
+         </div>
+        
+<script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBmmGbpGKaZb12dkwInJRo6Jobx8ICj3fc",
+    authDomain: "attendance-pt.firebaseapp.com",
+    databaseURL: "https://attendance-pt.firebaseio.com",
+    projectId: "attendance-pt",
+    storageBucket: "attendance-pt.appspot.com",
+    messagingSenderId: "91694828355"
+  };
+  firebase.initializeApp(config);
+</script>
+
+         <script src="js/jquery.min.js"></script>
+         <script src="js/script.js"></script>
+         <script src="js/script2.js"></script>
+         <script src="js/script3.js"></script>
+         <script src="js/sw.js"></script>
+         <script src="js/rainbowvis.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+
+      </div>
+   </body>
+</html>

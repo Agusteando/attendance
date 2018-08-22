@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans+Condensed:300');
+.boy {
+background-image: url("boy.png");
+background-repeat: no-repeat;
+background-position: center bottom;
+height: 90px;
+overflow: hidden;
+
+}
+.girl {
+background-image: url("girl.png");
+background-repeat: no-repeat;
+background-position: center bottom;
+height: 90px;
+overflow: hidden;
+}
+.ausente {
+background-color: #ff000042;
+content:'[add icon symbol here]';
+}
+#docente {
+	width: auto;
+	height: 55px;
+	font-size: 30px;
+	border-radius: 30px;
+}
+.ss {
+	max-width: 200px;
+	min-width: 200px;
+	font-size: 18px;
+	margin: 10px;
+	padding-bottom: 105px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.input {
+display: none;
+}
+.ind {
+background: none;
+border-width: 0px;
+}
+h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 10px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+    text-align: center;
+	padding-right: 20px;
+	z-index: -100;
+}
+.tab {
+ font-size: 20px;
+ color: black;
+ border-width: 2px;
+ border-color: #1f7adba3;
+ z-index: 100;
+}
+#view {
+position: fixed;
+bottom: 0;
+left: 0;
+opacity: 0.5;
+font-size: 15px;
+padding: 25px;
+}
+#logo {
+	width: 100px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	font-size: 20px;
+}
+.all {
+font-weight: bold;
+width: auto;
+font-size: 30px;
+position: fixed;
+bottom: 0;
+left: 0;
+text-align: center;
+}
+input[type='checkbox'] {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+}
+.active {
+	border-width: 5px;
+	border-color: #1F7ADB;
+}
+#sub {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+.topbar {
+	background-color: #1f7adba3;
+	min-height: 100px;
+}
